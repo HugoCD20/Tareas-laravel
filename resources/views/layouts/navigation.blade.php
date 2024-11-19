@@ -22,8 +22,8 @@
                         {{ __('Registro') }}
                     </x-nav-link>
 
-                    @if (request()->routeIs('verTarea'))
-                        <x-nav-link :href="route('verTarea')" :active="request()->routeIs('verTarea')">
+                    @if (request()->routeIs('tarea.show'))
+                        <x-nav-link :href="route('verTarea')" :active="request()->routeIs('tarea.show')">
                             {{ __('ver') }}
                         </x-nav-link>
                     @endif
